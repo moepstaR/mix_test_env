@@ -24,7 +24,11 @@ ruby setup.rb -b 10000 -s 5 -c 5
 ```sh
 #-b base port as used in setup.rb
 #-i server id 0..4
-ruby server.rb -b 10000 -i {0,..,4}
+ruby server.rb -b 10000 -i 0
+ruby server.rb -b 10000 -i 1
+ruby server.rb -b 10000 -i 2
+ruby server.rb -b 10000 -i 3
+ruby server.rb -b 10000 -i 4
 ```
 
 3. Start clients
@@ -32,7 +36,11 @@ ruby server.rb -b 10000 -i {0,..,4}
 ```sh
 #-i client id 0..4
 # more options available with -h
-ruby client.rb -i {0,..,4}
+ruby client.rb -i 0
+ruby client.rb -i 1
+ruby client.rb -i 2
+ruby client.rb -i 3
+ruby client.rb -i 4
 ```
 
 4. Decrypt messages
