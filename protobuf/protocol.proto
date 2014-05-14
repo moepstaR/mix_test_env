@@ -1,0 +1,8 @@
+package protobuf;
+
+message MixMessage {
+  required string addr = 1;
+  required bytes iv = 2;
+  required bytes key = 3;
+  required bytes msg = 4;
+}
